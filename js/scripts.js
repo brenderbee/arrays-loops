@@ -53,7 +53,7 @@ $(document).ready(function() {
         $("ul").prepend("<li>" + item + "</li>");
       });
     }
-
+    $("#main").fadeOut();
     $(".result").show();
   });
 });

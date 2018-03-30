@@ -4,7 +4,7 @@ h1, h2, h3 {
 }
 
 body {
-  background-color: #030209;
+  background-color: black;
   font-family: "Nunito", sans-serif;
 }
 
@@ -28,14 +28,14 @@ li {
 }
 
 .well {
-  background-color: #030209;
+  background-color: black;
   border: 1px solid white;
 }
 
 
 /* NOTE: HAL css */
 .notification {
-    margin: 5% auto; /* NOTE: Addition by BLF */
+    margin: 2% auto; /* NOTE: Addition by BLF */
     background: #2D2A2B;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#494852), to(#2A2A30));
     background-image: -webkit-linear-gradient(#494852, #2A2A30);
