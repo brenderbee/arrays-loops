@@ -34,16 +34,20 @@ function beep(number, name) {
 $(document).ready(function() {
   $("form").submit(function(event) {
 
+    // Code clearing after each submit
     event.preventDefault();
     $("ul").empty();
+    $(".result").hide();
 
+    // User Input
     var inputName = $("#name").val();
     var inputNumber = parseInt($("#number").val());
     var inputIncrease = $("input:radio[name=sort]:checked").val();
 
-
+    // Process User Input
     var result = beep(inputNumber, inputName);
 
+    // Determine which sort to return
     if ( inputIncrease > 0) {
       result.forEach(function(item) {
         $("ul").append("<li>" + item + "</li>");
@@ -53,7 +57,7 @@ $(document).ready(function() {
         $("ul").prepend("<li>" + item + "</li>");
       });
     }
-    $("#main").fadeOut();
-    $(".result").show();
+    // Display Result
+    $(".result").fadeIn();
   });
 });
