@@ -1,8 +1,8 @@
 // Business Logic
 function beep(number, name) {
-  // Clears arrays on each submit
+  // Clears array on each submit
   var resultNumbers = [];
-  var words = [];
+
   // Input Validation
   if ( isNaN(number) ) {
     resultNumbers.push("Please enter a number.");
@@ -15,6 +15,7 @@ function beep(number, name) {
   // Make an array of numbers and beeps from 0 to input number
   for (var i = 0; i <= number; i++){
     if (i % 3 === 0 && i !== 0) {
+      var words = []; // Clears array on each submit
       words.push("I'm sorry, ", name, ". I'm afraid I can't do that.")
       resultNumbers.push(words.join(""));
     } else if (i.toString().includes("1")) {
