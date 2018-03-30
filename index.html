@@ -10,7 +10,24 @@
   </head>
   <body>
     <div class="container">
-      
+      <h1>Beep Boop Translator</h1>
+<!-- NOTE: Input Form -->
+      <div class="well">
+        <form>
+          <h2>Translate your number into beeps and boops!</h2>
+          <div class="form-group">
+            <label for="number">Enter a number:</label>
+            <input type="text" class="form-control" id="number" required>
+          </div>
+          <button type="submit" class="btn btn-info">Submit</button>
+        </form>
+      </div>
+<!-- NOTE: Result -->
+      <div class="well">
+        <h2>Result</h2>
+        <ul id="result">
+        </ul>
+      </div>
     </div>
   </body>
 </html>
