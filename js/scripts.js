@@ -33,5 +33,6 @@ $(document).ready(function() {
       $("#result").append("<li>" + item + "</li>");
     });
 
+    $(".result").show();
   });
 });
