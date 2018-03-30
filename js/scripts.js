@@ -1,8 +1,7 @@
 // Business Logic
-
-var resultNumbers = [];
-
 function beep(number) {
+  // Clears array on each submit
+  var resultNumbers = [];
   // Make an array of number from 0 to input number
   for (var i = 0; i <= number; i++){
     if (i % 3 === 0 && i !== 0) {
@@ -23,14 +22,15 @@ function beep(number) {
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
-    $("ul#result").empty();
+
+    $("ul").empty();
 
     var inputNumber = parseInt($("#number").val());
 
     var result = beep(inputNumber);
 
     result.forEach(function(item) {
-      $("#result").append("<li>" + item + "</li>");
+      $("ul").append("<li>" + item + "</li>");
     });
 
     $(".result").show();
