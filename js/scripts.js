@@ -1,8 +1,8 @@
 // Business Logic
-function beep(number) {
-  // Clears array on each submit
+function beep(number, name) {
+  // Clears arrays on each submit
   var resultNumbers = [];
-
+  var words = [];
   // Input Validation
   if ( isNaN(number) ) {
     resultNumbers.push("Please enter a number.");
@@ -15,7 +15,8 @@ function beep(number) {
   // Make an array of numbers and beeps from 0 to input number
   for (var i = 0; i <= number; i++){
     if (i % 3 === 0 && i !== 0) {
-      resultNumbers.push("I'm sorry, Dave. I'm afraid I can't do that.");
+      words.push("I'm sorry, ", name, ". I'm afraid I can't do that.")
+      resultNumbers.push(words.join(""));
     } else if (i.toString().includes("1")) {
       resultNumbers.push("Boop!");
     } else if (i.toString().includes("0")) {
@@ -35,11 +36,12 @@ $(document).ready(function() {
     event.preventDefault();
     $("ul").empty();
 
+    var inputName = $("#name").val();
     var inputNumber = parseInt($("#number").val());
     var inputIncrease = $("input:radio[name=sort]:checked").val();
 
 
-    var result = beep(inputNumber);
+    var result = beep(inputNumber, inputName);
 
     if ( inputIncrease > 0) {
       result.forEach(function(item) {
@@ -50,8 +52,6 @@ $(document).ready(function() {
         $("ul").prepend("<li>" + item + "</li>");
       });
     }
-
-
 
     $(".result").show();
   });
