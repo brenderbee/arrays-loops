@@ -32,6 +32,11 @@ li {
   border: 1px solid white;
 }
 
+.form-control:focus {
+  border-color: none;
+  box-shadow: 0px 0px 10px 0px white;
+  }
+
 
 /* NOTE: HAL css */
 .notification {
