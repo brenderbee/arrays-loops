@@ -9,11 +9,11 @@ function beep(number) {
       resultNumbers.push("I'm sorry, Dave. I'm afraid I can't do that.");
     } else if (i.toString().includes("1")) {
       resultNumbers.push("Boop!");
+    } else if (i.toString().includes("0")) {
+      resultNumbers.push("Beep!");
     } else {
       resultNumbers.push(i);
     }
-
-
   }
   return resultNumbers;
 }
