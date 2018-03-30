@@ -36,12 +36,22 @@ $(document).ready(function() {
     $("ul").empty();
 
     var inputNumber = parseInt($("#number").val());
+    var inputIncrease = $("input:radio[name=sort]:checked").val();
+
 
     var result = beep(inputNumber);
 
-    result.forEach(function(item) {
-      $("ul").append("<li>" + item + "</li>");
-    });
+    if ( inputIncrease > 0) {
+      result.forEach(function(item) {
+        $("ul").append("<li>" + item + "</li>");
+      });
+    } else {
+      result.forEach(function(item) {
+        $("ul").prepend("<li>" + item + "</li>");
+      });
+    }
+
+
 
     $(".result").show();
   });
