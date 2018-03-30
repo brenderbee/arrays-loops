@@ -17,12 +17,13 @@ _Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't d
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
 | **Program Gathers User Input.** | User input: "23" | Output: "23" |
-| **Program takes a number and display the range of numbers from 0 to the chosen number.* | User input: "5" | Output: "1, 2, 3, 4, 5" |
-| **Program takes a number and display the range of numbers from 0 to the chosen number and replaces 0 with "Beep!"**| User Input: "10" | Output: "1, 2, 3, 4, 5, 6, 7, 8, 9, Beep!" |
-| **Program takes a number and display the range of numbers from 0 to the chosen number and replaces numbers that contain 0 with "Beep!"**| User Input: "10" | Output: "1, 2, 3, 4, 5, 6, 7, 8, 9, Beep!" |
-| **Program takes a number and display the range of numbers from 0 to the chosen number and replaces 1 with "Boop!"**| User Input: "10" | Output: "Beep!, 2, 3, 4, 5, 6, 7, 8, 9, Boop!" |
-| **Program takes a number and display the range of numbers from 0 to the chosen number and replaces numbers that contain 1 with "Boop!"**| User Input: "10" | Output: "Boop!, 2, 3, 4, 5, 6, 7, 8, 9, Beep!" |
-| **Program takes a number and display the range of numbers from 0 to the chosen number and replaces numbers divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that."**| User Input: "3" | Output: "Boop!, 2, I'm sorry, Dave. I'm afraid I can't do that. |
+| **Program takes a number and displays the range of numbers from 0 to the chosen number.** | User input: "5" | Output: "1, 2, 3, 4, 5" |
+| **Program takes a number and displays the range of numbers from 0 to the chosen number and replaces numbers divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that."**| User Input: "3" | Output: "1, 2, I'm sorry, Dave. I'm afraid I can't do that. |
+| **Program takes a number and displays the range of numbers from 0 to the chosen number and replaces 1 with "Boop!"**| User Input: "5" | Output: "Boop!, 2, "I'm sorry, Dave. I'm afraid I can't do that.", 4, 5" |
+| **Program takes a number and displays the range of numbers from 0 to the chosen number and replaces numbers containing 1 with "Boop!"**| User Input: "10" | Output: "...7, 8, "I'm sorry, Dave. I'm afraid I can't do that.", Boop!" |
+| **Program takes a number and displays the range of numbers from 0 to the chosen number and replaces numbers that contain 0 with "Beep!"**| User Input: "20" | Output: "...Boop!, Beep!" |
+
+
 
 ## Setup/Installation Requirements
 
