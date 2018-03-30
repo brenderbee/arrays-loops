@@ -15,12 +15,30 @@ li {
   color: white;
 }
 
+.btn {
+  background-color: #850504;
+  border-color: #850504;
+}
+
+.btn:hover {
+  background-color: #ffe913;
+  border-color: #ffe913;
+  color: black;
+}
 
 .jumbotron {
   color: white;
   text-align: center;
   background-image: url("../img/space.jpg");
   background-size: cover;
+}
+
+.jumbotron h1 {
+  text-shadow: 0 0 10px black;
+}
+
+.jumbotron p {
+  text-shadow: 0 0 10px black;
 }
 
 .result {
@@ -38,7 +56,7 @@ li {
   }
 
 
-/* NOTE: HAL css */
+/* NOTE: HAL css from website*/
 .notification {
     margin: 2% auto; /* NOTE: Addition by BLF */
     background: #2D2A2B;
