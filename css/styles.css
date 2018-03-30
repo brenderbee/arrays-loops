@@ -1,10 +1,21 @@
 h1, h2, h3 {
+  color: white;
   font-family: "Nunito", sans-serif;
 }
 
 body {
   background-color: #030209;
+  font-family: "Nunito", sans-serif;
 }
+
+p,
+ul,
+label,
+li {
+  color: white;
+}
+
+
 .jumbotron {
   color: white;
   text-align: center;
@@ -16,6 +27,13 @@ body {
   display: none;
 }
 
+.well {
+  background-color: #030209;
+  border: 1px solid white;
+}
+
+
+/* NOTE: HAL css */
 .notification {
     margin: 5% auto; /* NOTE: Addition by BLF */
     background: #2D2A2B;
