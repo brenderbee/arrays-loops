@@ -3,11 +3,23 @@
 var resultNumbers = [];
 
 function beep(number) {
+  // Make an array of number from 0 to input number
   for (var i = 0; i <= number; i++){
-    resultNumbers.push(i);
+    if (i % 3 === 0 && i !== 0) {
+      resultNumbers.push("I'm sorry, Dave. I'm afraid I can't do that.");
+    } else {
+      resultNumbers.push(i);
+    }
   }
   return resultNumbers;
 }
+  // resultNumbers.forEach(function(number){
+  //   if (number % 3 === 0) {
+  //    "I'm sorry, Dave. I'm afraid I can't do that."
+  //   }
+  // });
+
+
 
 
 // User-interface Logic
