@@ -30,6 +30,7 @@ _Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't d
 1. Clone this repository.
 2. Navigate to index.html on web browser to view application.
 3. Edit application in text editor.
+4. View GH Pages: https://brenderbee.github.io/arrays-loops/
 
 ## Known Bugs
 * No known bugs at this time.
